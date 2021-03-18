@@ -98,5 +98,14 @@
   <ItemGroup>
     <None Include="Resources\scissors 2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LosingSoundEffect.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WinSoundEffect.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hm.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

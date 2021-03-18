@@ -61,6 +61,24 @@ namespace Rock_Paper_Scissors.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Hm {
+            get {
+                return ResourceManager.GetStream("Hm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream LosingSoundEffect {
+            get {
+                return ResourceManager.GetStream("LosingSoundEffect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap paper {
@@ -107,6 +125,15 @@ namespace Rock_Paper_Scissors.Properties {
             get {
                 object obj = ResourceManager.GetObject("tv_colour_bars", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream WinSoundEffect {
+            get {
+                return ResourceManager.GetStream("WinSoundEffect", resourceCulture);
             }
         }
     }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Rock_Paper_Scissors
 {
@@ -66,6 +67,8 @@ namespace Rock_Paper_Scissors
                     ties = ties + 1;
                     lblTieNum.Text = Convert.ToString(ties);
                 }
+                SoundPlayer tie = new SoundPlayer(Properties.Resources.Hm);
+                tie.Play();
             }
 
             else if (randNum == 1 && radPaper.Checked)
@@ -77,6 +80,8 @@ namespace Rock_Paper_Scissors
                     playerWins = playerWins + 1;
                     lblPlayerWinsNum.Text = Convert.ToString(playerWins);
                 }
+                SoundPlayer win = new SoundPlayer(Properties.Resources.WinSoundEffect);
+                win.Play();
             }
 
             else if (randNum == 1 && radScissors.Checked)
@@ -88,6 +93,8 @@ namespace Rock_Paper_Scissors
                     opponentWins = opponentWins + 1;
                     lblOpponentWinsNum.Text = Convert.ToString(opponentWins);
                 }
+                SoundPlayer lose = new SoundPlayer(Properties.Resources.LosingSoundEffect);
+                lose.Play();
             }
 
             else if (randNum == 2 && radPaper.Checked)
@@ -99,6 +106,8 @@ namespace Rock_Paper_Scissors
                     ties = ties + 1;
                     lblTieNum.Text = Convert.ToString(ties);
                 }
+                SoundPlayer tie = new SoundPlayer(Properties.Resources.Hm);
+                tie.Play();
             }
 
             else if (randNum == 2 && radRock.Checked)
@@ -110,6 +119,8 @@ namespace Rock_Paper_Scissors
                     opponentWins = opponentWins + 1;
                     lblOpponentWinsNum.Text = Convert.ToString(opponentWins);
                 }
+                SoundPlayer lose = new SoundPlayer(Properties.Resources.LosingSoundEffect);
+                lose.Play();
             }
 
             else if (randNum == 2 && radScissors.Checked)
@@ -121,6 +132,8 @@ namespace Rock_Paper_Scissors
                     playerWins = playerWins + 1;
                     lblPlayerWinsNum.Text = Convert.ToString(playerWins);
                 }
+                SoundPlayer win = new SoundPlayer(Properties.Resources.WinSoundEffect);
+                win.Play();
             }
 
             else if (randNum == 3 && radScissors.Checked)
@@ -132,7 +145,8 @@ namespace Rock_Paper_Scissors
                     ties = ties + 1;
                     lblTieNum.Text = Convert.ToString(ties);
                 }
-                    
+                SoundPlayer tie = new SoundPlayer(Properties.Resources.Hm);
+                tie.Play();
             }
 
             else if (randNum == 3 && radRock.Checked)
@@ -144,7 +158,9 @@ namespace Rock_Paper_Scissors
                     playerWins = playerWins + 1;
                     lblPlayerWinsNum.Text = Convert.ToString(playerWins);
                 }
-                   
+                SoundPlayer win = new SoundPlayer(Properties.Resources.WinSoundEffect);
+                win.Play();
+
             }
 
             else if (randNum == 3 && radPaper.Checked)
@@ -156,6 +172,8 @@ namespace Rock_Paper_Scissors
                     opponentWins = opponentWins + 1;
                     lblOpponentWinsNum.Text = Convert.ToString(opponentWins);
                 }
+                SoundPlayer lose = new SoundPlayer(Properties.Resources.LosingSoundEffect);
+                lose.Play();
             }
             
 
